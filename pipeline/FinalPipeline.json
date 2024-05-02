@@ -188,7 +188,13 @@
 				"typeProperties": {
 					"dataflow": {
 						"referenceName": "Dataflow Summary",
-						"type": "DataFlowReference"
+						"type": "DataFlowReference",
+						"parameters": {
+							"dataflow_param_fiscalyear": {
+								"value": "@pipeline().globalParameters.dataflow_param_fiscalyear",
+								"type": "Expression"
+							}
+						}
 					},
 					"compute": {
 						"coreCount": 8,
